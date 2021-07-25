@@ -1,0 +1,48 @@
+header{
+    margin-top: -8px;
+        height: 50px;
+        background-color: #A03037;
+}
+
+img{
+    width: 120px;
+    margin-top: 12px;
+    margin-left: 140px;
+}
+
+.search-input{
+    margin-top: -30px;
+    margin-left: 290px;
+}
+input{
+    width: 450px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+}
+
+.search-icon{
+    margin-top: -22px;
+    margin-left: 5px;
+}
+
+.profile-icon{
+     margin-top: -25px;
+    margin-left: 700px;
+    color: white;
+}
+.fa-user-circle{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.cart-icon{
+     margin-top: -27px;
+    margin-left: 785px;
+    color: white;
+}
+.fa-shopping-cart{
+    font-size: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,163 @@
+.main-container {
+width: 1172px;
+height: 455px;
+padding-top: 70px;
+background: #babcc5 0% 0% no-repeat padding-box;
+}
+
+.container{
+margin-left: 240px;
+width: 624px;
+height: 391px;
+background: #F5F5F5 0% 0% no-repeat padding-box;
+border-radius: 21px;
+}
+
+.container p{
+margin-top: 13px;
+margin-left: 65px;
+font-size: 18px;
+text-align: left;
+font: normal normal medium 18px/24px Roboto;
+letter-spacing: 0px;
+color: #0A0102;
+text-transform: uppercase;
+}
+
+img{
+margin-top: 47px;
+margin-left: 53px;
+width: 245px;
+height: 245px;
+background: transparent 0% 0% no-repeat padding-box;
+}
+
+.form-register{
+margin-top: -369px;
+margin-left: 328px;
+width: 385px;
+height: 430px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 5px 15px #00000029;
+border: 1px solid #E4E4E4;
+border-radius: 6px;
+opacity: 1;
+}
+
+.heading-one h5{
+margin-top: 40px;
+margin-left: 60px;
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;
+cursor: pointer;
+}
+
+.heading-two h5{
+margin-top: -72px;
+margin-left: 230px;
+font-size: 25px;
+margin-bottom: -50px;
+font-family: 'Times New Roman', Times, serif;
+cursor: pointer;
+}
+
+input{
+    margin-top: -30px;
+    margin-left: 60px;
+    width: 260px;
+    outline: none;
+    height: 35px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif ;
+    padding-left: 5px;
+}
+
+.fullName h1{
+margin-top: 80px;
+margin-left: 62px;
+font-size: 15px;
+text-align: left;
+letter-spacing: 0px;
+color: #0A0102;
+font-weight: 100;
+text-transform: capitalize;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.email h1{
+margin-top: 10px;
+margin-left: 62px;
+font-size: 15px;
+text-align: left;
+font-family: 'Times New Roman', Times, serif;
+letter-spacing: 0px;
+color: #0A0102;
+font-weight: 100;
+text-transform: capitalize;
+}
+
+
+
+.password h1{
+margin-top: 10px;
+margin-left: 62px;
+font-size: 15px;
+text-align: left;
+font-family: 'Times New Roman', Times, serif;
+letter-spacing: 0px;
+color: #0A0102;
+font-weight: 100;
+text-transform: capitalize;
+}
+
+.mobile h1{
+margin-top: 20px;
+margin-left: 62px;
+font-size: 15px;
+font-weight: 100;
+text-align: left;
+font-family: 'Times New Roman', Times, serif;
+letter-spacing: 0px;
+color: #0A0102;
+text-transform: capitalize;
+}
+
+.signup-btn{
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 271px;
+    height: 35px;
+    border: none;
+background: #A03037 0% 0% no-repeat padding-box;
+border-radius: 3px;
+opacity: 1;
+color: white;
+font-family: Times;
+font-size: 20px;
+padding-bottom: 5px;
+cursor: pointer;
+}
+
+.text-login.active,
+.text-signup.active {
+  text-decoration: underline;
+  text-decoration-color: #A03037;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}
+
+.eye-icon{
+    margin-top: -27px;
+    margin-left: 305px;
+    cursor: pointer;
+}
