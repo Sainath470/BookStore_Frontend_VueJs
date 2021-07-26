@@ -1,0 +1,104 @@
+@import 'Colors.scss';
+
+.first-container{
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 750px;
+    height: 241px;
+    border: 1px solid rgb(218, 211, 211);
+    border-radius: 1px;
+}
+
+.length{
+    margin-top: -10px;
+    margin-left: 30px;
+    h5{
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+// .inside-container{
+//     margin-left:177px;
+//     width: 155px;
+//     height: 22px;
+//     color: $black;
+// }
+
+img{
+    width:100px;
+    height: 120px;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+.book-name{
+    margin-left: 170px;
+    margin-top: -128px;
+}
+
+.book-author{
+    margin-left: 170px;
+    margin-top: -5px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    color: $light_black;
+}
+
+.book-price{
+    margin-left: 170px;
+    margin-top: -10px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icons {
+    display: flex;
+    gap :10px;
+    margin-left: 170px;
+    input{
+        width: 20px;
+        margin-top: -3px;
+    }
+}
+
+.btn-place{
+    margin-left: 520px;
+    margin-top:40px;
+    button{
+        width: 200px;
+        height: 30px;
+        border: none;
+        background-color: rgb(85, 85, 230);
+        color: $white;
+        font-size: 14px;
+    }
+}
+
+.details{
+    border: 1px solid rgb(228, 217, 217);
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 750px;
+    height: 60px;
+    h2{
+        margin-top: 17px;
+        font-size: 20px;
+        color: rgb(48, 25, 25);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 200;
+        margin-left: 30px;
+    }
+}
+
+.input-details{
+    display:flex;
+    margin-top: 40px;
+}
+.mid-section img{
+    width: 105px;
+    height: 85px;
+    margin-top:40px;
+    padding-left:36px;
+    opacity: 1;
+}

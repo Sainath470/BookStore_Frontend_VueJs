@@ -1,0 +1,114 @@
+@import "Colors.scss";
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 70px;
+    margin-left: 115px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.books-container{
+    border: 1px solid rgb(241, 233, 233);
+    width: 224px;
+    min-height: 100px;
+    max-height: 500px;
+    outline: none;
+    border-radius: 4px;
+    background: white;
+    position: sticky;
+}
+
+.books-container:hover{
+    box-shadow:0.6px 0.6px 0.6px 0.6px rgb(173, 206, 206);
+}
+
+
+.image-book{
+    width: 224px;
+    height: 172px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 2px 2px 0px 0px;
+    opacity: 1; 
+}
+
+img{
+    margin-left: 59px;
+    margin-top: 19px;
+    width: 105px;
+    height: 135px;
+    opacity: 1;
+    border:none;
+}
+
+
+.book-title{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.2px;
+    color: $black;
+    margin-left: 20px;
+    margin-top: 4px;
+    width: 300px;
+    height: 29px;
+}
+
+.book-author{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.2px;
+    color: $black;
+    margin-left: 22px;
+    margin-top: -4px;
+    width: 300px;
+    height: 29px;
+    color: $light_black;
+}
+
+.book-price{
+    margin-left: 22px;
+    margin-top: -5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bag-btn{
+    display: flex;
+    gap: 22px;
+    margin-left: 21px;
+    margin-top:10px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 30px;
+}
+
+button{
+    background-color: $dark_red;
+    border: none;
+    color: $white;
+    font-size: 10px;
+    width: 80px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.addbag-btn {
+    display: flex;
+    margin-left: 21px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    width: 300px;
+    height: 30px;
+    button{
+    background-color: $dark_red;
+    border: none;
+    color: $white;
+    font-size: 12px;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    }
+}

@@ -5,6 +5,8 @@ import Login from './pages/Login.vue'
 import ForgotPassword from './pages/Forgotpassword.vue'
 import ResetPassword from './pages/Resetpassword.vue'
 import Dashboard from './components/Dashboard.vue'
+import DisplayBooks from './components/DisplayBooks.vue';
+import Cart from './components/Cart.vue';
 
 
 Vue.use(Router)
@@ -28,7 +30,17 @@ export default new Router({
     },
     {
         path: '/dashboard',
-        component: Dashboard
+        component: Dashboard,
+        children: [
+            {
+                path: '/displayBook',
+                component: DisplayBooks,
+            },
+            {
+                path: '/Cart',
+                component: Cart,
+            },
+        ],
     }
-    ]
+    ],
 })

@@ -31,7 +31,7 @@
         </div>
         <i @click="togglePassword()" class="far fa-eye-slash"></i>
         <div class="forgot-password">
-          <a href="http://localhost:8080/forgotPassword">forgot password?</a>
+          <a href="/forgotPassword">forgot password?</a>
         </div>
         <div class="login-btn">
           <button @click="handleSubmit()">Login</button>
@@ -78,6 +78,7 @@ export default {
             alert("User Logged in");
             localStorage.setItem("token", response.data.token);
             this.$refs.form.reset();
+            this.$router.push("/dashboard");
             return response;
           }
         })

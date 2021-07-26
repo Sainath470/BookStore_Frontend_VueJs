@@ -14,5 +14,11 @@ export default {
     },
     userReset(data) {
         return axios.postData("/auth/resetPassword", data);
+    },
+    userDisplayBooks() {
+        return axios.getData("/auth/displayBooks");
+    },
+    userDisplayBooksInCart() {
+        return axios.getData("/auth/displayBooksInCart")
     }
 }
