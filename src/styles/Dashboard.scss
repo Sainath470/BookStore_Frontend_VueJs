@@ -1,7 +1,9 @@
+@import 'Colors.scss';
+
 header{
     margin-top: -8px;
         height: 50px;
-        background-color: #A03037;
+        background-color: $dark_red;
 }
 
 img{
@@ -30,7 +32,7 @@ input{
 .profile-icon{
      margin-top: -25px;
     margin-left: 700px;
-    color: white;
+    color: $white;
 }
 .fa-user-circle{
     font-size: 25px;
@@ -40,7 +42,7 @@ input{
 .cart-icon{
      margin-top: -27px;
     margin-left: 785px;
-    color: white;
+    color: $white;
 }
 .fa-shopping-cart{
     font-size: 24px;
