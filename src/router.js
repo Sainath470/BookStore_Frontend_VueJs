@@ -7,6 +7,7 @@ import ResetPassword from './pages/Resetpassword.vue'
 import Dashboard from './components/Dashboard.vue'
 import DisplayBooks from './components/DisplayBooks.vue';
 import Cart from './components/Cart.vue';
+import orderPlace from './components/Orderplace.vue'
 
 
 Vue.use(Router)
@@ -29,6 +30,10 @@ export default new Router({
         component: ResetPassword
     },
     {
+        path: '/orderPlaced',
+        component: orderPlace,
+    },
+    {
         path: '/dashboard',
         component: Dashboard,
         children: [
@@ -40,6 +45,7 @@ export default new Router({
                 path: '/Cart',
                 component: Cart,
             },
+
         ],
     }
     ],

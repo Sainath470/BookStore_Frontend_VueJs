@@ -19,6 +19,18 @@ export default {
         return axios.getData("/auth/displayBooks");
     },
     userDisplayBooksInCart() {
-        return axios.getData("/auth/displayBooksInCart")
-    }
+        return axios.getData("/auth/displayBooksInCart");
+    },
+    customerRegister(data) {
+        return axios.postData("/auth/customerRegister", data);
+    },
+    userOrderPlaced() {
+        return axios.postData("/auth/orderPlacedSuccessfull")
+    },
+    addToCart(data) {
+        return axios.postData("/auth/addToCart", data)
+    },
+    removeFromCart(data) {
+        return axios.postData("/auth/removeFromCart", data)
+    },
 }

@@ -18,6 +18,7 @@
     <div class="display-books">
       <DisplayBooks v-if="state == true" />
       <Cart v-if="state == false" />
+      <!-- <Order v-if="flag == false" /> -->
     </div>
   </div>
 </template>
@@ -25,17 +26,19 @@
 ><script>
 import DisplayBooks from "./DisplayBooks.vue";
 import Cart from "./Cart.vue";
+// import Order from "./Orderplace.vue";
 
 export default {
   name: "Dashboard",
   components: {
     DisplayBooks,
     Cart,
+    // Order,
   },
   data() {
     return {
       state: true,
-      flag: true,
+      // flag: true,
     };
   },
   methods: {
