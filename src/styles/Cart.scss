@@ -58,6 +58,8 @@ img{
     input{
         width: 20px;
         margin-top: -3px;
+        padding-left: 12px;
+        outline: none;
     }
 }
 
@@ -346,14 +348,4 @@ label{
     position: absolute;
 }
 
-.remove{
-    margin-left: 270px;
-    margin-top: -20px;
-    button{
-        font-size: 12px;
-        border: none;
-        background-color: white;
-        cursor: pointer;
-    }
-}
 

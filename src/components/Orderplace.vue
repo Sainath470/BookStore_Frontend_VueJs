@@ -12,7 +12,7 @@
       <img class="img-bottom" src="../assets/default.png" alt="" />
     </div>
     <div class="continue-btn">
-      <button @click="handleSubmit()">CONTINUE SHOPPING</button>
+      <button class="button" @click="handleSubmit()">Continue Shopping</button>
     </div>
   </div>
 </template>
@@ -28,7 +28,8 @@ export default {
   },
   created() {
     service.userOrderPlaced().then((response) => {
-      this.orderNumber = response.data.orderId;
+      console.log(response);
+      this.orderNumber = response.data.orderNumber;
     });
   },
   methods: {

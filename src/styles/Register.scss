@@ -4,7 +4,7 @@
     width: 1172px;
     height: 455px;
     padding-top: 70px;
-    background: $greyish_blue 0% 0% no-repeat padding-box;
+    background: $violet_blue 0% 0% no-repeat padding-box;
 }
 
 .container{
@@ -61,6 +61,9 @@ img{
     margin-bottom: -50px;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+    border-bottom: 4px solid rgb(199, 42, 42);
+    border-width: 6px;
+    width: 95px;
 }
 
 input{

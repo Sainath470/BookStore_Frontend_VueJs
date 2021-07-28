@@ -1,6 +1,6 @@
 <template>
-  <div class="main-container">
-    <div class="container" v-if="state == true">
+  <div class="main-container" id="wrapper">
+    <div class="container" v-if="temp == true">
       <img src="../assets/side.png" alt="not-loading" class="side-image" />
       <p>ONLINE BOOK SHOPPING</p>
       <form ref="form" class="form-register" @submit.prevent="">
@@ -58,20 +58,19 @@
         </div>
       </form>
     </div>
-    <Login v-if="state == false" />
+    <Login v-if="temp == false" />
   </div>
 </template>
 
 <script>
 import service from "../service/User";
-import Login from "./Login.vue";
 export default {
   components: {
-    Login,
+    Login: () => import("./Login.vue"),
   },
   data() {
     return {
-      state: true,
+      temp: true,
       fullName: "",
       email: "",
       password: "",
@@ -81,7 +80,7 @@ export default {
   },
   methods: {
     changeState() {
-      this.state = !this.state;
+      this.temp = !this.temp;
     },
     togglePassword() {
       this.password_type =
@@ -119,6 +118,6 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-@import "@/styles/Register.scss"
+<style lang="scss" scoped>
+@import "@/styles/Register.scss";
 </style>

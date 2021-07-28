@@ -1,12 +1,12 @@
 <template>
   <div class="main-container">
     <div class="wrapper">
-      <div class="container" v-if="flag == true">
+      <div class="container" v-if="flag">
         <img src="../assets/side.png" alt="not-loading" class="side-image" />
         <p>ONLINE BOOK SHOPPING</p>
         <form ref="form" class="form-register" @submit.prevent="">
           <div class="heading-one">
-            <h5>LOGIN</h5>
+            <h5 class="login-heading">LOGIN</h5>
           </div>
           <div class="heading-two">
             <h5 @click="changeState()">SIGNUP</h5>
@@ -39,18 +39,17 @@
           </div>
         </form>
       </div>
+      <Register v-else />
     </div>
-    <Register v-if="flag == false" />
   </div>
 </template>
 
 <script>
 import service from "../service/User";
-import Register from "./Register.vue";
 export default {
   name: "Login",
   components: {
-    Register,
+    Register: () => import("./Register.vue"),
   },
   data() {
     return {

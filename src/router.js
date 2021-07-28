@@ -33,6 +33,7 @@ export default new Router({
         path: '/orderPlaced',
         component: orderPlace,
     },
+
     {
         path: '/dashboard',
         component: Dashboard,

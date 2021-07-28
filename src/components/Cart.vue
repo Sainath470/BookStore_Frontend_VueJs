@@ -18,9 +18,6 @@
           <input value="1" />
           <i class="fas fa-plus-circle"></i>
         </div>
-        <div class="remove">
-          <button @click="removeFromCart(book.id)">Remove</button>
-        </div>
       </div>
       <div class="btn-place">
         <button @click="changeState()">Place Order</button>
@@ -83,15 +80,7 @@
               </div>
             </div>
             <div class="continue-btn">
-              <button
-                type="submit"
-                @click="
-                  handleSubmit();
-                  orderPlaced();
-                "
-              >
-                continue
-              </button>
+              <button @click="handleSubmit()">continue</button>
             </div>
           </div>
         </form>
@@ -118,6 +107,8 @@ export default {
       landmark: "",
       type: "",
       orderNumber: "",
+      lengthOfBooks: 0,
+      Cart: "MyCart",
     };
   },
   created() {
@@ -147,40 +138,13 @@ export default {
         .customerRegister(userData)
         .then((response) => {
           if (response.data.status == 201) {
-            alert("customer registered successfully");
-            return response;
+            alert("Order placed successfully");
+            this.$router.push("/orderPlaced");
           }
         })
         .catch((error) => {
           alert("error in placing order");
           return error;
-        });
-    },
-    orderPlaced() {
-      service.userOrderPlaced().then((response) => {
-        if (response.data.status == 201) {
-          alert("Order placed successfully");
-          this.$router.push("/orderPlaced");
-        }
-      });
-    },
-    removeFromCart(bookId) {
-      let userData = {
-        token: this.$route.params.token,
-        id: bookId,
-      };
-      service
-        .removeFromCart(userData)
-        .then((response) => {
-          console.log(response);
-          if (response.data.status == 201) {
-            alert("book removed from cart");
-            return response;
-          }
-        })
-        .catch((err) => {
-          alert("invalid credentials");
-          return err;
         });
     },
   },

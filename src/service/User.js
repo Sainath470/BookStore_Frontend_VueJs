@@ -34,3 +34,6 @@ export default {
         return axios.postData("/auth/removeFromCart", data)
     },
 }
+
+
+

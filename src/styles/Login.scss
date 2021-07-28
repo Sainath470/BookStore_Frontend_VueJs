@@ -13,6 +13,7 @@
     height: 391px;
     background: $greyish_white 0% 0% no-repeat padding-box;
     border-radius: 21px;
+    position: fixed;
 }
 
 .container p{
@@ -52,10 +53,15 @@ img{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+    border-bottom: 4px solid rgb(184, 34, 34);
+    border-width: 6px;
+    width: 85px;
 }
 
+
+
 .heading-two h5{
-    margin-top: -73px;
+    margin-top: -76px;
     margin-left: 230px;
     font-size: 25px;
     margin-bottom: 50px;

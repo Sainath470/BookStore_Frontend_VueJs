@@ -48,3 +48,23 @@ input{
     font-size: 24px;
     cursor: pointer;
 }
+
+.count-cart{
+    margin-left: 734px;
+    margin-top: -32px;
+    p{
+        font-size:15px;
+        color: white;
+    }
+    h6{
+        margin-top: -46px;
+        margin-left: 44px;
+        color: white;
+        border: 1px solid rgb(226, 213, 213);
+        width: 10px;
+        background-color: white;
+        color: black;
+        padding-left: 5px;
+        border-radius: 10px;
+    }
+}
